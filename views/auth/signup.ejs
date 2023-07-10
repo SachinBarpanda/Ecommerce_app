@@ -1,0 +1,47 @@
+<% layout('layouts/boilerplate') %>
+<%-include('../partials/flash') %>
+    <div class="row">
+
+        <div class="col-md-5 mx-auto">
+            
+            <h1 class="display-6">Sign up</h1>
+            <form action="/register" method="POST">
+
+                <div  class="mb-3">
+                    <label class="form-label " for="username">Username: </label>
+                    <input class="form-control" type="text" name="username" id="username" placeholder="User ka name">
+                </div>
+
+
+                <div class="mb-3">
+                    <label class="form-label" for="email">Email: </label>
+                    <input class="form-control" type="text" name="email" id="email" placeholder="Ashli email dena">
+                </div>
+
+                <div class="mb-3">
+                    <p class="mb-2">Want to register as </p>
+                    <div class="mx-2 d-inline-block">
+                        <input class="form-check-input" value="buyer" type="radio" name="role" id="buyer">
+                        <label class="form-check-label" for="buyer"> Buyer</label>
+                    </div>
+
+                    <div class="mx-2 d-inline-block">
+                        <input class="form-check-input" value="seller" type="radio" name="role" id="seller">
+                        <label class="form-check-label" for="seller"> Seller</label>
+                    </div>
+
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="password">Password: </label>
+                    <input class="form-control" type="text" name="password" id="password" placeholder="password batao">
+                </div>
+                <button type="submit" class="btn btn-sm btn-success">Sign Up</button>
+                <p class="fw-light mt-2">Have account ? <a href="/login">Login</a> </p>
+            </form>
+
+        </div>
+    </div>
+    </body>
+
+    </html>
